@@ -28,6 +28,7 @@ const SignUp = () => {
       });
       if(res.ok){
         const form = e.target;
+        //form.reset()
       }else{
         console.log('user registration failed')
       }
@@ -54,10 +55,7 @@ const SignUp = () => {
           <input type="password" placeholder='*************' className='border-[1px] rounded-md px-4 py-2 w-full outline-none my-2'
           onChange={(e)=>setPassword(e.target.value)}/>
         </div>
-        <div className='flex justify-between items-center my-3 text-sm'>
-          <span>Remember</span>
-          <span className='underline text-[#7B57DF] cursor-pointer'>Forget Password?</span>
-        </div>
+     
         <div className='flex flex-col'>
           <button className='bg-[#7B57DF] hover:bg-[#6848c2] px-4 py-2 rounded-md my-3'>Sign Up</button>
         </div>
